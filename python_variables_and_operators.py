@@ -286,3 +286,79 @@ colors_frozenset = frozenset(['red', 'green', 'blue'])
 
 print("Sports Set: ", sports_set)
 print("Colors Frozenset: ", colors_frozenset)
+
+
+# Boolean Type (bool)
+"""
+The Boolean type, denoted as bool, represents two values: True and Falce. 
+This type is commonly used in conditional statements and logic.
+"""
+
+# Example
+"""
+We will demonstrate the use of a boolean value.
+"""
+
+is_student = True
+has_library_card = False
+
+print("The user is a student: ", is_student)
+print("The user has a library card: ", has_library_card)
+
+
+# Binary Types (bytes, bytearray, memoryview)
+"""
+Binary types in Python are specialized data structures that deal with raw data like bytes and byte arrays.
+They are particularly useful when you need to work with binary data directly, such as when dealing with files, sending data over a network, or interfacing with binary data APIs. 
+Python offers three binray types: bytes, bytearray, and memoryview.
+
+Bytes (bytes): An immutable sequence of bytes. Perfect for handling data that shouldn't be altered, such as data you might read from a file and pass along without modification.
+Bytearray (bytearray): A mutable counterpart to bytes. Bytearray allows modification of the bytes, making it suitable for tasks that required changes to the byte data, such as manipulating image files or decoding binary communication. 
+
+Memoryview (memoryview): A memoryview object provides a way to view, and manipulate slices of another data structure (like bytes or bytearray) without copying it first. This is useful for large datasets or buffer-line structures where you want to avoid the overhead of copying large amounts of data. 
+"""
+
+# Example
+"""
+We will demonstrate the creation and basic manipulation of these binray types to illustrate their properties and uses.
+"""
+
+# Creating bytes
+byte_data = bytes([50, 100, 150]) # immutable sequence of bytes.
+
+# Creating bytearray
+byte_array_data = bytearray([50, 100, 150]) # mutable byte array.
+
+# Modifying bytearray
+byte_array_data[1] = 105 # Change the second element from 100 to 105.
+
+# Creating a memoryview
+memory_view = memoryview(byte_array_data) # Create a memoryview on the bytearray.
+
+#Slicing memoryview
+slice_of_memory_view = memory_view[1:3] # Slice the memoryview to include elements 1 and 2.
+
+# Printing results
+print("Bytes: ", list(byte_data))
+print("ByteArray: ", list(byte_array_data))
+print("MemoryView Slice: ", list(slice_of_memory_view))
+
+
+# None Type (NoneType)
+"""
+In Python, NoneType has a single value, None, which is used to signify the absence of a value or a null value in other languages.
+It it commonly used to represent default values, return of functions that do not explicitly return anything, and as placeholder for optional arguments. 
+"""
+
+# Example
+"""
+We will demonstrate the use of None with variables.
+"""
+
+val = None # Defining the 'val' variable with 'None' value
+
+if val is None:
+    print("No value provided") # Prints when value is 'None'
+else:
+    print("Value provided: ", str(val)) # Prints the value when it is not 'None'
+    
