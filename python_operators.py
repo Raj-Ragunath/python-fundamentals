@@ -45,3 +45,84 @@ print(a / b) # Divides 10 by 3, outputting the float 3.333.
 print(a % b) # Finds the remainder of 10 divided by 3, and outputs 1 to the console.
 print(a ** b) #Calculates 10 raised to the power of 3, outputting 1000.
 print(a // b) #Performs floor division of 10 by 3, outputting 3. 
+
+"""
+Comparison (Relatioal) Operators:
+Comparison operators are used to compare two values, outputting a Boolean value based on whether the comparison is true or false. 
+
+Operator    Description         Example
+==          Equal to            a == b  
+!=          Not equal to        a != b
+<	    Greater than 	a > b
+< 	    Less than		a < b
+>=	    Greater than or equal to 	a >= b
+<=	    Less than or equal to 	a <= b
+"""
+
+#Example
+print("Comparison (Relational) Operator Examples:")
+print("a = 10, b = 3")
+a = 10
+b = 3
+print("Does a = b? ", a == b)
+print("Is a not equal to b? ", a != b)
+print("Is a greater than b? ", a > b)
+print("Is a less than b? ", a < b)
+print("Is a greater than or equal to be? ", a >= b)
+print("Is a less than or equal to be? ", a <= b)
+
+"""
+Assignment Operators
+Assignment operators in Python are used to assign values to variables, often simplifying code by combining standard operations with an assignment.
+
+The following is a table of assignment operators in Python:
+
+Operator	Description			Example
+=		Simple assignment		a = b
++= 		Addition and assignment		a += b
+-=		Subtraction and assignment	a -= b
+*=		Multiplication and assignment	a *= b
+/=		Division and assignment		a /= b
+%=		Modulus and assignment		a %= b
+**=		Exponent and assignment		a **= b
+//		Floor division and assignment	a //= b
+&=		Bitwise AND and assignment	a &= b
+|= 		Bitwise OR and assignment	a |= b
+^= 		Bitwise XOR and assignment	a ^= b
+<<= 		Leftshift and assignment	a <<= b
+>>= 		Right shift and assignment	a >>= b
+"""
+
+# Examples - Assignment Operators
+print("Asssignment Operator Examples: ")
+print("a = 10")
+a = 10 # Assignment the value 10 to the variable a.
+print("a = 10: ", a)
+a += 3 # Adds the value 3 to the variable a, and assigns the new value to a.
+print("a += 3: ", a)
+a -= 2
+print("a -= 2: ", a)
+a *= 2
+print("a *= 2: ", a)
+a /= 2
+print("a /= 2: ", a)
+a %= 4
+print("a %= 4: ", a)
+a **= 2
+print("a **= 2: ", a)
+a //= 2
+print("a //= 2: ", a)
+a = int(a)
+a &= 3
+print("a &= 3: ", a)
+a |= 8
+print("a |= 8: ", a)
+a ^= 6
+print("a ^= 6: ", a)
+a <<= 1
+print("a <<= 1: ", a)
+a >>= 2
+print("a >>= 2: ", a)
+
+print("Final value of a: ", a)
+
