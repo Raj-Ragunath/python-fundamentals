@@ -240,4 +240,61 @@ a is c confirms that a and c refer to the same object, which is true since c is 
 a is not be checks if a and b are not the same object, which is true as they are different instances. 
 """
 
+"""
+Python Operator Precedence
+
+Operator precedence in Python determines the order in which operations are processed. 
+This can affect the outcome of expressions where multiple operators appear.
+High precedence operators are executetd before lower precedence ones. 
+
+Here's a simplified list of Python operator precedence, from highest to lowest.
+
+Precedence	Operator Type								Operator
+1		Parentheses								()	
+2		Exponentiation								**
+3		Unary plus, uniary minus, Bitwise NOT					+x, -x, ~x
+4		Multiplicative (Multiplication, division, modulus, floor division)	*, /, &, //
+5		Additive (Addition and Subtraction) 					+, -
+6		Bitwise shift (Left shift, Right shift) 				<< , >>
+7		Bitwise AND, OR, XOR							&, |, ^
+8		Comparison Operators							==, !=, <, >, <=, >=
+9		Equality (Memory locaiton / Object) 					is, is not
+10		Membership (in, not in) 						in, not in
+11		Logical NOT								not
+12		Logical AND								and
+13		Logical OR								or
+
+"""
+
+# Example - Operator Precedence
+print()
+print("Demonstrating Operator Precedence")
+print("a = 10, b = 20, c = 30")
+print("result = a + b * c ** 2 / 10 - 5 <= b or b % a == 0 and c > b")
+a = 10
+b = 20
+c = 30
+result = a + b * c ** 2 / 10 - 5 <= b or b % a == 0 and c > b
+print("Result: ", result)
+
+print(result)
+
+"""
+This example evaluates using Python's operator precedence rules:
+c ** 2 is calculated first because ** has the highest precedence among the operators used, resulting in 900.
+b * 900 is next, producing 18000.
+18000 / 10 is calculated, yielding 1800.
+a + 1800 gives 1810.
+1810 - 5 results in 1805.
+1805 <= b is evaluated (False since 1805 is not less than or equal to 20).
+b % a == 0 checks if 20 is divisible by 10 without remainder (True).
+c > b is True since 30 is greater than 20.
+True and True is True.
+False or True results in True.
+"""
+
+"""
+Understanding operator precedence is essential for writing clear and correct Python code, especially in complex expressions.
+Following and adhering to operator precedence ensures that you can predict and control the order of operations without excessive use of parentheses.
+"""
 
