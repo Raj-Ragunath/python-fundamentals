@@ -94,17 +94,18 @@ Operator	Description			Example
 """
 
 # Examples - Assignment Operators
+print()
 print("Asssignment Operator Examples: ")
 print("a = 10")
 a = 10 # Assignment the value 10 to the variable a.
 print("a = 10: ", a)
 a += 3 # Adds the value 3 to the variable a, and assigns the new value to a.
 print("a += 3: ", a)
-a -= 2
+a -= 2 # Subtracts the values 2 from the variable a and then re-assigns a to the new value.
 print("a -= 2: ", a)
-a *= 2
+a *= 2 # Multiplies the value of variable a by 2 and then re-assigns a to the new value. 
 print("a *= 2: ", a)
-a /= 2
+a /= 2 # Divides the value of variable a by 2 and then re-assigns a to the new value. 
 print("a /= 2: ", a)
 a %= 4
 print("a %= 4: ", a)
@@ -125,4 +126,118 @@ a >>= 2
 print("a >>= 2: ", a)
 
 print("Final value of a: ", a)
+
+"""
+Logical Operators
+Logical Operators are used to combine conditional statements in Python. 
+They are fundemental in expressing compound conditions.
+
+Operator	Description		Example
+and		Logical AND		a and b
+or		Logical OR		a or b
+not		Logical NOT		not a
+"""
+
+#Example - Logical Operators
+print()
+print("Logical Operator Examples:")
+print ("a = True and b = False")
+a = True
+b = False
+
+print("a and b: ", a and b) # Prints False because True AND False is False.
+print("a or b: ", a or b) # Prints True because a is True. True OR False results in True.
+print("not a: ", not a) # Prints False because a is True and the opposite of it is False.
+print("not b: ", not b) # Prints True because b is False and the opposite of it is True.
+
+"""
+Bitwise Operators
+Bitwise operators are used to perform bit-level operations on integers. 
+Bitwise operators manipulate individual bits of these numbers. 
+
+Operator	Description		Example
+&		Bitwise AND		a & b
+|		Bitwise OR		a | b
+^		Bitwise XOR		a ^ b
+~		Bitwise NOT		~a
+<<		Bitwise Left Shift	a << b
+>>		Bitwise Right Shift	a >> b
+"""
+
+#Example - Bitwise Operators
+print()
+print("Bitwise Operator Examples:")
+print("a = 2, b = 3")
+a = 2 # 0010 in binary
+b = 3 # 0011 in binary
+print("a & b: ", a & b) # 0010, which is equivalent to decimal 2.
+print("a | b: ", a | b) # 0011, which is equivalent to decimal 3. 
+print("a ^ b: ", a ^ b) # 0001, which is equivalent to decimal 1. 
+print("~a: ", ~a) # 1101, which is equivalent to decimal -3. Left most bit is 1, which signficies negative. 
+#Thus, (-8 x 1) + (4 x 1) + (2 * 0) + (1 x 1) = -8 + 4 + 1 = -8 + 5 = -3.
+print("~b: ", ~b) #1100, which is the equivalent of -4. -8 + 4 = -4.
+print("a << 1: ", a << 1) # 0100, which is the equivalent of decimal 4.
+print("a >> 1: ", a >> 1) # 0001, which is the equivalent of decimal 1.  
+
+"""
+a & b performs a bitwise AND, which results in 2 because the second bit is set in both a and b.
+a | b preforms a bitwise OR, resulting in 3 because at least one of the corresponding bits is set.
+a ^ b performs a bitwise XOR, resulting in 1 because only one of the corresponding bits is set in either a or b.
+~a is the bitwise NOT operation, which inverts all bits of a, leading to -3 (due to two's compliment representation).
+a << 1 shifts all bits in a left by one position, doubling the number to 4.
+a >> 1 shifts all bits in a right by one position, halving the number to 1. 
+"""
+
+"""
+Membership Operators 
+
+Membership operators in Python are used to test whether a value or variable is found in a sequence (string, list, tuple, etc.)
+
+Operator	Description				Example
+in		True if value is in sequence.		x in y
+not in		True if value is not in sequence. 	x not in y
+"""
+
+#Example - Membership Operators:
+print()
+print("Membership Operator Examples: ")
+print("list = [1, 2, 3, 4, 5]")
+my_list = [1, 2, 3, 4, 5]
+three_in_list = 3 in my_list
+print("3 in list: ", three_in_list) # Prints True, since 3 is indeed in the list.
+six_not_in_list = 6 not in my_list
+print("6 not in list: ", six_not_in_list) # Prints True, since 6 is indeed not in the list. 
+
+"""
+3 in list checks if 3 is a member of the list [1, 2, 3, 4, 5], which is true.
+6 not in list checks if 6 is not a member of the list, which is true since 6 is absent.
+"""
+
+"""
+Identity Operators
+Identity operators compare the memory locations of two objects. 
+They are used to check if objects are actually the same instance, beyond having equal value.
+
+Operator	Description				Example
+is		True if both sides are the same object.	a is b
+is not		True if sides are different objects.	a is not b
+"""
+
+#Example - Identity Operators
+print()
+print("Identity Operators - Examples")
+print("a = [1, 2, 3], b = [1, 2, 3], c = a")
+a = [1, 2, 3]
+b = [1, 2, 3]
+c = a
+print("a is b: ", a is b) # False. Even though the values are the same, these are two different objects. 
+print("a is c: ", a is c) # True. Both a and c point to the same object. 
+print("a is not b: ", a is not b) # True. Even though the values are the same, there are two different objects.
+
+"""
+a is b check if a and b refer to the same object, which is false because they are equal but not the same object.
+a is c confirms that a and c refer to the same object, which is true since c is assigned to a.
+a is not be checks if a and b are not the same object, which is true as they are different instances. 
+"""
+
 
