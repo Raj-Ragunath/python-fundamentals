@@ -82,4 +82,31 @@ elif condition2:
 	# Block of code to execute if condition2 is true.
 else: 
 	# Block of code to execute if all conditions are false.
- 
+
+Notice that elif allows for multiple conditions to be checked, each one after the previous on has evaluated to False.
+"""
+
+# Example - elif Statement
+print()
+print("elif Example:")
+print("x = 15. If x > 20, print 'x is greater than 20', else if x > 10, print 'x is greater than 10 but less than 20', else print 'x is less than 10'")
+
+x = 15
+if x > 20:
+	print("x is greater than 20")
+elif x > 10:
+	print("x is greater than 10, but less than 20")
+else:
+	print("x is less than 10")
+
+"""
+Explanation:
+x = 15: Set the variable x to the value 15.
+if x > 20: Check if x is greater than 20.
+elif x > 10: Since x is not greater than 20, but is greater than 10, execute this block.
+print(...): Print "x is greater than 10, but less than 20"
+"""
+
+"""
+This less provides a clear step-by-step guide to using if, elif, and else statements in Python, covering their purposes, syntaxes, and practical examples with detailed explanations.
+"""
